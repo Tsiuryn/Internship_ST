@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Task_01</string>
+    <string name="first_text">First text!</string>
+    <string name="second_text">Second text!</string>
+</resources>
