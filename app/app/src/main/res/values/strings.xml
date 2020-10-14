@@ -4,4 +4,12 @@
     //hw_01
     <string name="first_text">First text!</string>
     <string name="second_text">Second text!</string>
+
+    //hw_03
+    <string name="my_url">https://img5.goodfon.ru/original/800x480/e/fd/zima-ogni-prazdnik-olen-art-novyi-god-sani-santa-klaus-merry.jpg</string>
+    <string name="btnShowToast">Show Toast from Gradle</string>
+    <string name="btnDownloadImage">Download Image</string>
+    <string name="addYourUrl">Add your URl</string>
+
+
 </resources>

@@ -7,4 +7,7 @@
     //hw_01
     <color name="firstTextColor">#D50000</color>
     <color name="secondTextColor">#094EFF</color>
+
+    //hw_03
+    <color name="picassoColor">#BAB399</color>
 </resources>

@@ -2,6 +2,7 @@ package alex.ts.app
 
 import alex.ts.app.hw_01.TheFirstActivity
 import alex.ts.app.hw_02.TheSecondActivity
+import alex.ts.app.hw_03.TheThirdActivity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
         mainHW1.setOnClickListener(this)
         mainHW2.setOnClickListener(this)
+        mainHW3.setOnClickListener(this)
     }
 
     override fun onClick(view: View?) {
@@ -25,6 +27,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             mainHW2 ->{
                 val intent = Intent(this, TheSecondActivity::class.java)
+                startActivity(intent)
+            }
+            mainHW3 ->{
+                val intent = Intent(this, TheThirdActivity::class.java)
                 startActivity(intent)
             }
         }
