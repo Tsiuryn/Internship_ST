@@ -26,8 +26,14 @@ class TheThirdActivity: AppCompatActivity(), View.OnClickListener {
             btnDownload ->{
                 progressBar.visibility = View.VISIBLE
                 val url = myUrl.text.toString()
-                Repository(this, progressBar, imgFromNet).download(url)
+                downloadImage(url)
             }
+        }
+    }
+
+    private fun downloadImage(url: String){
+        runOnUiThread {
+            Repository(this, progressBar, imgFromNet).download(url)
         }
     }
 }
