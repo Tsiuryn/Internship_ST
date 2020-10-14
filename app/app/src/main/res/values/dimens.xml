@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //hw_01
+    <dimen name="text_view_size">30sp</dimen>
+
+    //hw_02
+    <dimen name="height_flags">250dp</dimen>
+</resources>

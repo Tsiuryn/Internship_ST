@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">app</string>
+
+    //hw_01
+    <string name="first_text">First text!</string>
+    <string name="second_text">Second text!</string>
+</resources>
