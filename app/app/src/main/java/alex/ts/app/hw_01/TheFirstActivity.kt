@@ -2,19 +2,17 @@ package alex.ts.app.hw_01
 
 import alex.ts.app.R
 import android.os.Bundle
-import android.os.PersistableBundle
-import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import kotlinx.android.synthetic.main.activity_thefirst.*
+import kotlinx.android.synthetic.main.activity_the_first.*
 
 class TheFirstActivity: AppCompatActivity(), View.OnClickListener {
     private var change = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_thefirst)
+        setContentView(R.layout.activity_the_first)
         listenerButton()
         textFirst.setOnClickListener(this)
     }

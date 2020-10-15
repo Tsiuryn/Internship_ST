@@ -3,7 +3,8 @@ package alex.ts.app
 import alex.ts.app.hw_01.TheFirstActivity
 import alex.ts.app.hw_02.TheSecondActivity
 import alex.ts.app.hw_03.TheThirdActivity
-import android.content.Context
+import alex.ts.app.hw_04.TheFourthActivity
+import alex.ts.app.hw_04.const.REQUEST_START_ACTIVITY
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -17,21 +18,25 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         mainHW1.setOnClickListener(this)
         mainHW2.setOnClickListener(this)
         mainHW3.setOnClickListener(this)
+        mainHW4.setOnClickListener(this)
+        mainHW5.setOnClickListener(this)
+        mainHW6.setOnClickListener(this)
     }
 
     override fun onClick(view: View?) {
         when (view) {
             mainHW1 ->{
-                val intent = Intent(this, TheFirstActivity::class.java)
-                startActivity(intent)
+                startActivity(Intent(this, TheFirstActivity::class.java))
             }
             mainHW2 ->{
-                val intent = Intent(this, TheSecondActivity::class.java)
-                startActivity(intent)
+                startActivity(Intent(this, TheSecondActivity::class.java))
             }
             mainHW3 ->{
-                val intent = Intent(this, TheThirdActivity::class.java)
-                startActivity(intent)
+                startActivity(Intent(this, TheThirdActivity::class.java))
+            }
+            mainHW4 ->{
+                startActivityForResult(Intent(this, TheFourthActivity::class.java), REQUEST_START_ACTIVITY)
+                overridePendingTransition(R.anim.set_left_in, R.anim.set_right_out)
             }
         }
     }

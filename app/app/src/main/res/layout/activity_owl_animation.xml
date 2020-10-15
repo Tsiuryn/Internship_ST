@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:layout_margin="@dimen/margin_btn"
+    tools:context=".hw_04.owl_animation.OwlAnimationActivity">
+
+    <ImageView
+        android:id="@+id/imgOwl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/owl_animation"/>
+
+</LinearLayout>

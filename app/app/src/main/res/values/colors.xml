@@ -10,4 +10,8 @@
 
     //hw_03
     <color name="picassoColor">#BAB399</color>
+
+    //hw_04
+    <color name="activeButton">#000000</color>
+    <color name="nonActiveButton">#9EA1A1</color>
 </resources>

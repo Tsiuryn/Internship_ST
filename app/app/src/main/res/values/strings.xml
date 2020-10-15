@@ -1,5 +1,15 @@
 <resources>
     <string name="app_name">app</string>
+    <string name="homework_01">HomeWork_01</string>
+    <string name="homework_02">HomeWork_02</string>
+    <string name="homework_03">HomeWork_03</string>
+    <string name="homework_04">HomeWork_04</string>
+    <string name="homework_05">HomeWork_05</string>
+    <string name="homework_06">HomeWork_06</string>
+    <string name="homework_07">HomeWork_07</string>
+    <string name="homework_08">HomeWork_08</string>
+    <string name="homework_09">HomeWork_09</string>
+    <string name="homework_10">HomeWork_10</string>
 
     //hw_01
     <string name="first_text">First text!</string>
@@ -10,6 +20,11 @@
     <string name="btnShowToast">Show Toast from Gradle</string>
     <string name="btnDownloadImage">Download Image</string>
     <string name="addYourUrl">Add your URl</string>
+
+    //hw_04
+    <string name="owl_animation">Owl animation</string>
+    <string name="clock">Clock</string>
+    <string name="diagram">Diagram</string>
 
 
 </resources>

@@ -5,4 +5,6 @@
 
     //hw_02
     <dimen name="height_flags">250dp</dimen>
+    <dimen name="width_btn">300dp</dimen>
+    <dimen name="margin_btn">8dp</dimen>
 </resources>
