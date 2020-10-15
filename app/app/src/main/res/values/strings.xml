@@ -26,5 +26,8 @@
     <string name="clock">Clock</string>
     <string name="diagram">Diagram</string>
 
-
+    //hw_05
+    <string name="wifi_is_on">WIFI is ON now</string>
+    <string name="wifi_is_of">WIFI is OFF now</string>
+    <string name="change_state_wifi">change state WIFI</string>
 </resources>

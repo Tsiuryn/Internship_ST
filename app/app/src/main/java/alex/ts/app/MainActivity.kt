@@ -5,6 +5,7 @@ import alex.ts.app.hw_02.TheSecondActivity
 import alex.ts.app.hw_03.TheThirdActivity
 import alex.ts.app.hw_04.TheFourthActivity
 import alex.ts.app.hw_04.const.REQUEST_START_ACTIVITY
+import alex.ts.app.hw_05.TheFifthActivity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -37,6 +38,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             mainHW4 ->{
                 startActivityForResult(Intent(this, TheFourthActivity::class.java), REQUEST_START_ACTIVITY)
                 overridePendingTransition(R.anim.set_left_in, R.anim.set_right_out)
+            }
+            mainHW5 ->{
+                startActivity(Intent(this, TheFifthActivity::class.java))
             }
         }
     }
