@@ -2,8 +2,6 @@ package alex.ts.app.hw_05
 
 import alex.ts.app.R
 import alex.ts.app.hw_05.const.SERVICE_START
-import alex.ts.app.hw_05.const.WIFI_TURN_OFF
-import alex.ts.app.hw_05.const.WIFI_TURN_ON
 import alex.ts.app.hw_05.service.WifiChangedService
 import android.content.*
 import android.net.wifi.WifiManager
@@ -16,6 +14,7 @@ class TheFifthActivity : AppCompatActivity() {
     private var isWifiOn = false
     private var bound = true
     private lateinit var sCon: ServiceConnection
+    private lateinit var mService: WifiChangedService
 
     private val myBroadcastReceiver: BroadcastReceiver = object : BroadcastReceiver() {
         override fun onReceive(context: Context, intent: Intent) {
@@ -34,9 +33,8 @@ class TheFifthActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_the_fifth)
         getCurrentStateOfWiFi()
-        listenerWifiStateButton()
         bindService(SERVICE_START)
-
+        listenerWifiStateButton()
     }
 
     private fun bindService(action : String){
@@ -45,7 +43,9 @@ class TheFifthActivity : AppCompatActivity() {
                 bound = false
             }
 
-            override fun onServiceConnected(p0: ComponentName?, p1: IBinder?) {
+            override fun onServiceConnected(p0: ComponentName?, binder: IBinder?) {
+                val mBinder = binder as WifiChangedService.MyBinder
+                mService = mBinder.getWifiChangedService()
                 bound = true
             }
 
@@ -63,9 +63,9 @@ class TheFifthActivity : AppCompatActivity() {
     private fun listenerWifiStateButton() {
         btnChangeStateWifi.setOnClickListener{
             if (isWifiOn){
-                bindService(WIFI_TURN_OFF)
+                mService.switchWifi(false)
             }else{
-                bindService(WIFI_TURN_ON)
+                mService.switchWifi(true)
             }
         }
     }

@@ -4,8 +4,8 @@
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -14,8 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-
+        <activity android:name=".hw_06.AddStudentActivity"></activity>
+        <activity android:name=".hw_06.ChangeStudentActivity" />
+        <activity android:name=".hw_06.TheSixthActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,9 +33,9 @@
         <activity android:name=".hw_04.clock.MyClockActivity" />
         <activity android:name=".hw_05.TheFifthActivity" />
 
-        <service android:name=".hw_05.service.WifiChangedService"
-            android:enabled="true"/>
-
+        <service
+            android:name=".hw_05.service.WifiChangedService"
+            android:enabled="true" />
     </application>
 
 </manifest>

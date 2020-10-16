@@ -1,0 +1,8 @@
+package alex.ts.app.hw_06.const
+
+const val REQUEST_FOR_ADD_STUDENT = 11
+const val REQUEST_FOR_EDIT_STUDENT = 22
+const val NEW_STUDENT = "NEW_STUDENT"
+const val TO_CHANGE_STUDENT = "TO_CHANGE_STUDENT"
+const val EDIT_STUDENT = "EDIT_STUDENT"
+const val REMOVE_STUDENT = "REMOVE_STUDENT"

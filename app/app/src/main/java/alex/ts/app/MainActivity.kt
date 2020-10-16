@@ -6,6 +6,7 @@ import alex.ts.app.hw_03.TheThirdActivity
 import alex.ts.app.hw_04.TheFourthActivity
 import alex.ts.app.hw_04.const.REQUEST_START_ACTIVITY
 import alex.ts.app.hw_05.TheFifthActivity
+import alex.ts.app.hw_06.TheSixthActivity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -26,22 +27,23 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(view: View?) {
         when (view) {
-            mainHW1 ->{
-                startActivity(Intent(this, TheFirstActivity::class.java))
-            }
-            mainHW2 ->{
-                startActivity(Intent(this, TheSecondActivity::class.java))
-            }
-            mainHW3 ->{
-                startActivity(Intent(this, TheThirdActivity::class.java))
-            }
-            mainHW4 ->{
-                startActivityForResult(Intent(this, TheFourthActivity::class.java), REQUEST_START_ACTIVITY)
+            mainHW1 -> startActivity(Intent(this, TheFirstActivity::class.java))
+
+            mainHW2 -> startActivity(Intent(this, TheSecondActivity::class.java))
+
+            mainHW3 -> startActivity(Intent(this, TheThirdActivity::class.java))
+
+            mainHW4 -> {
+                startActivityForResult(
+                    Intent(this, TheFourthActivity::class.java),
+                    REQUEST_START_ACTIVITY
+                )
                 overridePendingTransition(R.anim.set_left_in, R.anim.set_right_out)
             }
-            mainHW5 ->{
-                startActivity(Intent(this, TheFifthActivity::class.java))
-            }
+            mainHW5 -> startActivity(Intent(this, TheFifthActivity::class.java))
+
+            mainHW6 -> startActivity(Intent(this, TheSixthActivity::class.java))
+
         }
     }
 

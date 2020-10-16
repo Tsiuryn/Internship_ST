@@ -30,4 +30,14 @@
     <string name="wifi_is_on">WIFI is ON now</string>
     <string name="wifi_is_of">WIFI is OFF now</string>
     <string name="change_state_wifi">change state WIFI</string>
+
+    //hw_06
+    <string name="surname">Surname:</string>
+    <string name="name">Name:</string>
+    <string name="id">Id:</string>
+    <string name="btn_add_student">Add student</string>
+    <string name="btn_edit_student">EDIT</string>
+    <string name="btn_delete_student">delete</string>
+    <string name="add_name">Add name</string>
+    <string name="add_surname">Add Surname</string>
 </resources>
