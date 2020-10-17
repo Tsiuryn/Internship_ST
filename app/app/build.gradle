@@ -35,6 +35,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
@@ -42,5 +43,13 @@ dependencies {
     //hw_03
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.5'
     implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //hw_08
+    def lifecycle_version = "2.2.0"
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    implementation 'androidx.fragment:fragment-ktx:1.2.0-alpha01'
 
 }

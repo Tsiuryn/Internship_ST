@@ -8,6 +8,7 @@ import alex.ts.app.hw_04.const.REQUEST_START_ACTIVITY
 import alex.ts.app.hw_05.TheFifthActivity
 import alex.ts.app.hw_06.TheSixthActivity
 import alex.ts.app.hw_07.TheSeventhActivity
+import alex.ts.app.hw_08.TheEighthActivity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -50,6 +51,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             mainHW6 -> startActivity(Intent(this, TheSixthActivity::class.java))
 
             mainHW7 -> startActivity(Intent(this, TheSeventhActivity::class.java))
+
+            mainHW8 -> startActivity(Intent(this, TheEighthActivity::class.java))
 
         }
     }

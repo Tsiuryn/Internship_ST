@@ -40,4 +40,10 @@
     <string name="btn_delete_student">delete</string>
     <string name="add_name">Add name</string>
     <string name="add_surname">Add Surname</string>
+
+    //hw_08
+    <string name="task_01">Task_01</string>
+    <string name="task_02">Task_02</string>
+    <string name="plus_1">Plus_1</string>
+    <string name="even_numbers">Even numbers</string>
 </resources>
