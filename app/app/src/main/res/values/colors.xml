@@ -14,4 +14,8 @@
     //hw_04
     <color name="activeButton">#000000</color>
     <color name="nonActiveButton">#9EA1A1</color>
+
+    //hw_09
+    <color name="womanColor">#FF8BBC</color>
+    <color name="manColor">#005EFD</color>
 </resources>

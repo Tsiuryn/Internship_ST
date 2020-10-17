@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="alex.ts.app.hw_09.viewmodel.TheNinthViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        tools:context=".hw_09.TheNinthActivity">
+
+        <ImageView
+            android:id="@+id/hw9IwPhoto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            my_src="@{viewModel.myUrl}"/>
+
+        <TextView
+            android:id="@+id/hw9Name"
+            style="@style/Hw9TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            text_color="@{viewModel.gender}"
+            android:text="@{viewModel.myName}"
+            app:layout_constraintTop_toBottomOf="@+id/hw9IwPhoto" />
+
+        <TextView
+            android:id="@+id/hw9Surname"
+            style="@style/Hw9TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            text_color="@{viewModel.gender}"
+            android:text="@{viewModel.surname}"
+            app:layout_constraintTop_toBottomOf="@+id/hw9Name" />
+
+        <TextView
+            android:id="@+id/hw9Age"
+            style="@style/Hw9TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            text_color="@{viewModel.gender}"
+            android:text="@{viewModel.age}"
+            app:layout_constraintTop_toBottomOf="@+id/hw9Surname" />
+
+        <TextView
+            android:id="@+id/hw9Sex"
+            style="@style/Hw9TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            text_color="@{viewModel.gender}"
+            android:text="@{viewModel.gender}"
+            app:layout_constraintTop_toBottomOf="@+id/hw9Age" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

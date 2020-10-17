@@ -9,6 +9,7 @@ import alex.ts.app.hw_05.TheFifthActivity
 import alex.ts.app.hw_06.TheSixthActivity
 import alex.ts.app.hw_07.TheSeventhActivity
 import alex.ts.app.hw_08.TheEighthActivity
+import alex.ts.app.hw_09.TheNinthActivity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -54,8 +55,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
             mainHW8 -> startActivity(Intent(this, TheEighthActivity::class.java))
 
+            mainHW9 -> startActivity(Intent(this, TheNinthActivity::class.java))
+
         }
     }
+
 
 
 }
