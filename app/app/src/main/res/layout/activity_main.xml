@@ -46,5 +46,29 @@
         android:layout_height="wrap_content"
         android:text="@string/homework_06"
         android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/mainHW7"
+        android:layout_width="@dimen/width_btn"
+        android:layout_height="wrap_content"
+        android:text="@string/homework_07"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/mainHW8"
+        android:layout_width="@dimen/width_btn"
+        android:layout_height="wrap_content"
+        android:text="@string/homework_08"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/mainHW9"
+        android:layout_width="@dimen/width_btn"
+        android:layout_height="wrap_content"
+        android:text="@string/homework_09"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/mainHW10"
+        android:layout_width="@dimen/width_btn"
+        android:layout_height="wrap_content"
+        android:text="@string/homework_10"
+        android:layout_marginTop="16dp"/>
 
 </LinearLayout>

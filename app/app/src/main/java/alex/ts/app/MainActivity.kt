@@ -7,6 +7,7 @@ import alex.ts.app.hw_04.TheFourthActivity
 import alex.ts.app.hw_04.const.REQUEST_START_ACTIVITY
 import alex.ts.app.hw_05.TheFifthActivity
 import alex.ts.app.hw_06.TheSixthActivity
+import alex.ts.app.hw_07.TheSeventhActivity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -23,6 +24,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         mainHW4.setOnClickListener(this)
         mainHW5.setOnClickListener(this)
         mainHW6.setOnClickListener(this)
+        mainHW7.setOnClickListener(this)
+        mainHW8.setOnClickListener(this)
+        mainHW9.setOnClickListener(this)
+        mainHW10.setOnClickListener(this)
     }
 
     override fun onClick(view: View?) {
@@ -43,6 +48,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             mainHW5 -> startActivity(Intent(this, TheFifthActivity::class.java))
 
             mainHW6 -> startActivity(Intent(this, TheSixthActivity::class.java))
+
+            mainHW7 -> startActivity(Intent(this, TheSeventhActivity::class.java))
 
         }
     }

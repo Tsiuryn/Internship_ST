@@ -14,9 +14,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".hw_06.AddStudentActivity"></activity>
-        <activity android:name=".hw_06.ChangeStudentActivity" />
-        <activity android:name=".hw_06.TheSixthActivity" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,7 +30,11 @@
         <activity android:name=".hw_04.diagram.MyDiagramActivity" />
         <activity android:name=".hw_04.clock.MyClockActivity" />
         <activity android:name=".hw_05.TheFifthActivity" />
-
+        <activity android:name=".hw_06.AddStudentActivity"></activity>
+        <activity android:name=".hw_06.ChangeStudentActivity" />
+        <activity android:name=".hw_06.TheSixthActivity" />
+        <activity android:name=".hw_07.TheSeventhActivity"/>
+        <activity android:name=".hw_07.AddStudentActivity"/>
         <service
             android:name=".hw_05.service.WifiChangedService"
             android:enabled="true" />
