@@ -10,6 +10,7 @@
     <string name="homework_08">HomeWork_08</string>
     <string name="homework_09">HomeWork_09</string>
     <string name="homework_10">HomeWork_10</string>
+    <string name="homework_11">HomeWork_11</string>
 
     //hw_01
     <string name="first_text">First text!</string>
@@ -47,5 +48,13 @@
     <string name="plus_1">Plus_1</string>
     <string name="even_numbers">Even numbers</string>
 
-    //hw_09
+    //hw_10
+    <string name="hw_10_text">DI \nKOIN \nDagger2</string>
+
+    //hw_11
+    <string name="Abbreviation">AUD</string>
+    <string name="rate">Rate</string>
+    <string name="scale">Scale</string>
+    <string name="date">Date</string>
+    <string name="menu_search">Search</string>
 </resources>

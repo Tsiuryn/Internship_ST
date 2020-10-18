@@ -14,7 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".hw_09.TheNinthActivity"></activity>
+        <activity android:name=".hw_11.TheEleventhActivity"></activity>
+        <activity android:name=".hw_10.TheTenthActivity" />
+        <activity android:name=".hw_09.TheNinthActivity" />
         <activity android:name=".hw_08.task_2.TimerActivity" />
         <activity android:name=".hw_08.task_1.CounterActivity" />
         <activity android:name=".hw_08.TheEighthActivity" />

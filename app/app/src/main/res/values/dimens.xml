@@ -7,5 +7,6 @@
     <dimen name="height_flags">250dp</dimen>
     <dimen name="width_btn">300dp</dimen>
     <dimen name="margin_btn">8dp</dimen>
+    <dimen name="margin_Top">16dp</dimen>
     <dimen name="hw_05_text_size">35sp</dimen>
 </resources>

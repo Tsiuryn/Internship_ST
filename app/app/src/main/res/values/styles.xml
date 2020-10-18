@@ -27,6 +27,11 @@
         <item name="android:layout_marginStart">16dp</item>
     </style>
 
+    <style name="Hw10TextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">80sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
 
 
 </resources>
