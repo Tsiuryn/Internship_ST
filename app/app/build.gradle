@@ -77,4 +77,12 @@ dependencies {
     //material
     implementation 'com.google.android.material:material:1.2.0-alpha04'
 
+    // latest stable
+    def koin_version = "2.2.0-rc-2"
+
+// Koin for Android
+    implementation "org.koin:koin-android:$koin_version"
+// Koin AndroidX ViewModel features
+    implementation "org.koin:koin-androidx-viewmodel:$koin_version"
+
 }

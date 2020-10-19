@@ -2,8 +2,10 @@ package alex.ts.app.hw_11
 
 import alex.ts.app.R
 import alex.ts.app.hw_11.adapter.CurrencyAdapter
+import alex.ts.app.hw_11.const.CURRENCY_URL
 import alex.ts.app.hw_11.model.Currency
 import alex.ts.app.hw_11.repo.Repository
+import alex.ts.app.hw_11.retrofit.Holder
 import alex.ts.app.hw_11.viewmodel.ListCurrencyViewModel
 import alex.ts.app.hw_11.viewmodel.ListCurrencyViewModelFactory
 import androidx.appcompat.app.AppCompatActivity
@@ -16,6 +18,9 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_the_eleventh.*
+import kotlinx.android.synthetic.main.activity_the_third.*
+import org.koin.android.ext.android.get
+import org.koin.java.KoinJavaComponent.get
 import kotlin.collections.ArrayList
 
 class TheEleventhActivity : AppCompatActivity() {
@@ -28,12 +33,12 @@ class TheEleventhActivity : AppCompatActivity() {
         setContentView(R.layout.activity_the_eleventh)
         setSupportActionBar(hw11Toolbar)
         recycler = hw11Recycler
-        val vm = ViewModelProvider(this, ListCurrencyViewModelFactory(Repository(applicationContext)))
+        val holder: Holder = get<Holder>()
+        val vm = ViewModelProvider(this, ListCurrencyViewModelFactory(Repository(holder)))
             .get(ListCurrencyViewModel::class.java)
         vm.listCurrency.observe(this, Observer {
             createAdapter(it)
         })
-
     }
 
     private fun createAdapter (list: List<Currency>){

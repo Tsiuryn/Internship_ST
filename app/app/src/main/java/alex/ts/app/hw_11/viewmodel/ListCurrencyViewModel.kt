@@ -9,9 +9,9 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
 
 class ListCurrencyViewModel(repository: Repository): ViewModel() {
-
     private var _listCurrency = MutableLiveData<List<Currency>>()
     val listCurrency: LiveData<List<Currency>> = _listCurrency
+
     init {
         viewModelScope.launch {
             _listCurrency.value = repository.getPost()
