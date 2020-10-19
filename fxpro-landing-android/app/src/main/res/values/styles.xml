@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.BankPro" />
+
+    <style name="Theme.BankPro" parent="Base.BankProApp">
+
+        <!-- Material color attributes -->
+
+        <item name="colorSurface">#3A3A3C</item>
+        <!-- Native component attributes -->
+        <item name="android:textViewStyle">@android:style/Widget.Material.TextView</item>
+
+    </style>
+
+    <style name="Theme.BankPro.Launcher">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="Base.BankProApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">#000000</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        <item name="android:navigationBarColor">#000000</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/ic_splash</item>
+    </style>
+
+    <!--endregion-->
+</resources>
